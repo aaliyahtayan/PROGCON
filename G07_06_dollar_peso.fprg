@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Althea Amor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-16 12:07:25 AM"/>
+        <attribute name="created" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTA6MTU6MjggUE07MzM1MA=="/>
+        <attribute name="edited" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTY7MTI6MDc6MjUgQU07MzszNDQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dollarToPeso, pesoToDollar" type="Real" array="False" size=""/>
+            <declare name="money" type="Real" array="False" size=""/>
+            <declare name="option" type="Integer" array="False" size=""/>
+            <assign variable="dollarToPeso" expression="50.73"/>
+            <assign variable="pesoToDollar" expression="0.020"/>
+            <output expression="&quot;Enter amount of money:&quot;" newline="True"/>
+            <input variable="money"/>
+            <output expression="&quot;Choose an option (1 or 2):&quot;" newline="True"/>
+            <output expression="&quot;1.) Convert US dollars to PH peso.&quot;" newline="True"/>
+            <output expression="&quot;2.) Convert PH peso to US dollars.&quot;" newline="True"/>
+            <input variable="option"/>
+            <if expression="option == 1">
+                <then>
+                    <output expression="money &amp; &quot;USD = &quot; &amp; money * dollarToPeso &amp; &quot;PHP&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="option == 2">
+                        <then>
+                            <output expression="money &amp; &quot;PHP = &quot; &amp; money * pesoToDollar &amp; &quot;USD&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Invalid option!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

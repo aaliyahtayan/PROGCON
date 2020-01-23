@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Althea Amor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-16 12:08:40 AM"/>
+        <attribute name="created" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTA6MDc6MzkgUE07MzM1Mw=="/>
+        <attribute name="edited" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTY7MTI6MDg6NDAgQU07MjszNDQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number, sum" type="Real" array="False" size=""/>
+            <assign variable="number" expression="0"/>
+            <assign variable="sum" expression="0"/>
+            <output expression="&quot;Enter list of numbers (-999 to stop):&quot;" newline="True"/>
+            <while expression="number != -999">
+                <assign variable="sum" expression="sum + number"/>
+                <input variable="number"/>
+            </while>
+            <output expression="&quot;The sum of all value entered is &quot; &amp; sum &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

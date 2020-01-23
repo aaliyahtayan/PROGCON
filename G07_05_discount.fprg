@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Althea Amor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-16 12:06:04 AM"/>
+        <attribute name="created" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MDk6NTg6MDQgUE07MzM1OQ=="/>
+        <attribute name="edited" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTY7MTI6MDY6MDQgQU07MjszNDQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="itemPrice, discountRate, discountedPrice" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the original price of the item:&quot;" newline="True"/>
+            <input variable="itemPrice"/>
+            <output expression="&quot;Enter the discount rate (%):&quot;" newline="True"/>
+            <input variable="discountRate"/>
+            <assign variable="discountedPrice" expression="itemPrice * (discountRate/100)"/>
+            <output expression="&quot;The item with a price of &quot; &amp; itemPrice &amp; &quot; and a &quot; &amp; discountRate &amp; &quot;% discount rate is now &quot; &amp; itemPrice - discountedPrice &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

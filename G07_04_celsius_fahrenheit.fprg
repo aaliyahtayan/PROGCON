@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Althea Amor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-15 09:57:54 PM"/>
+        <attribute name="created" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MDk6NTI6MzcgUE07MzM1OQ=="/>
+        <attribute name="edited" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MDk6NTc6NTQgUE07MTszNDcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celsius, fahrenheit" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter desired temperature to convert (in Celsius):&quot;" newline="True"/>
+            <input variable="celsius"/>
+            <assign variable="fahrenheit" expression="(celsius * (9/5)) + 32"/>
+            <output expression="celsius &amp; &quot;C is &quot; &amp; fahrenheit &amp; &quot;F&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Althea Amor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-15 11:33:42 PM"/>
+        <attribute name="created" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTA6Mjk6MTUgUE07MzM1MQ=="/>
+        <attribute name="edited" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTE6MzM6NDIgUE07MzszNDU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dividend, divisor" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter dividend:&quot;" newline="True"/>
+            <input variable="dividend"/>
+            <output expression="&quot;Enter divisor:&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <output expression="&quot;The quotient for &quot; &amp; dividend &amp; &quot;/&quot; &amp; divisor &amp; &quot; is &quot; &amp; dividend/divisor &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

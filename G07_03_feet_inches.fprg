@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Althea Amor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-15 09:52:34 PM"/>
+        <attribute name="created" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MDk6NDY6MTEgUE07MzM1NA=="/>
+        <attribute name="edited" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MDk6NTI6MzQgUE07MTszNDY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="feet, inches" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the size you want to convert (in feet):&quot;" newline="True"/>
+            <input variable="feet"/>
+            <assign variable="inches" expression="feet * 12"/>
+            <output expression="feet &amp; &quot;ft is &quot; &amp; inches &amp; &quot;ins.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

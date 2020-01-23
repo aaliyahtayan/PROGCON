@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Althea Amor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-15 11:31:15 PM"/>
+        <attribute name="created" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTE6MDc6MjggUE07MzM1Mg=="/>
+        <attribute name="edited" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTE6MzE6MTUgUE07MjszNDU0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="currentDay, currentMonth, currentYear" type="Integer" array="False" size=""/>
+            <declare name="birthDay, birthMonth, birthYear" type="Integer" array="False" size=""/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the current day:&quot;" newline="True"/>
+            <input variable="currentDay"/>
+            <output expression="&quot;Enter current month:&quot;" newline="True"/>
+            <input variable="currentMonth"/>
+            <output expression="&quot;Enter current year:&quot;" newline="True"/>
+            <input variable="currentYear"/>
+            <output expression="&quot;Enter your birthday:&quot;" newline="True"/>
+            <input variable="birthDay"/>
+            <output expression="&quot;Enter your birth month:&quot;" newline="True"/>
+            <input variable="birthMonth"/>
+            <output expression="&quot;Enter your birth year:&quot;" newline="True"/>
+            <input variable="birthYear"/>
+            <if expression="birthDay &gt; currentDay">
+                <then>
+                    <assign variable="currentDay" expression="currentDay + daysInMonths(birthMonth-1)"/>
+                    <assign variable="currentMonth" expression="currentMonth - 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="birthMonth &gt; currentMonth">
+                <then>
+                    <assign variable="currentYear" expression="currentYear - 1"/>
+                    <assign variable="currentMonth" expression="currentMonth + 12"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="age" expression="currentYear - birthYear"/>
+            <output expression="&quot;Your age is &quot; &amp; age &amp; &quot; years old.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="daysInMonths" type="Integer" variable="days">
+        <parameters>
+            <parameter name="index" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="days" type="Integer" array="False" size=""/>
+            <declare name="daysInMonths" type="Integer" array="True" size="12"/>
+            <assign variable="daysInMonths[0]" expression="31"/>
+            <assign variable="daysInMonths[1]" expression="28"/>
+            <assign variable="daysInMonths[2]" expression="31"/>
+            <assign variable="daysInMonths[3]" expression="30"/>
+            <assign variable="daysInMonths[4]" expression="31"/>
+            <assign variable="daysInMonths[5]" expression="30"/>
+            <assign variable="daysInMonths[6]" expression="31"/>
+            <assign variable="daysInMonths[7]" expression="31"/>
+            <assign variable="daysInMonths[8]" expression="30"/>
+            <assign variable="daysInMonths[9]" expression="31"/>
+            <assign variable="daysInMonths[10]" expression="30"/>
+            <assign variable="daysInMonths[11]" expression="31"/>
+            <assign variable="days" expression="daysInMonths[index]"/>
+        </body>
+    </function>
+</flowgorithm>
